@@ -9,6 +9,8 @@ const SignUp = () => {
     const [error, setError] = useState(false);
     const navigate = useNavigate();
 
+    // const url = "mongodb+srv://bhanupratap04123:rieocQN2ePiBBJ5u@cluster0.1j9ymic.mongodb.net/?retryWrites=true&w=majority";
+
     const btnHandleSignup = async () => {
         // console.log(name, email, password);
 
@@ -17,7 +19,7 @@ const SignUp = () => {
             return false;
         }
 
-        let result = await fetch("http://localhost:4800/signup", {
+        let result = await fetch("http://localhost:4600/signup", {
 
             method: "POST",
             body: JSON.stringify({ name, email, password }),
