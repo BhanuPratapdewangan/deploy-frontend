@@ -19,7 +19,7 @@ const SignUp = () => {
             return false;
         }
 
-        let result = await fetch("http://localhost:4600/signup", {
+        let result = await fetch("https://deploy-backend-xcoz.onrender.com/signup", {
 
             method: "POST",
             body: JSON.stringify({ name, email, password }),
